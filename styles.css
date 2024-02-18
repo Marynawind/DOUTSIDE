@@ -1,0 +1,146 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #cbe7ee
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+header {
+    background: linear-gradient(180.00deg, #232e34,rgba(166, 176, 181, 0) 100%);
+    color: #000000;
+    padding: 60px;
+    background-image: url('leo.png');
+    background-position: left; 
+    background-size: 100px;
+    background-repeat: no-repeat; 
+}
+
+header h1 {
+    float: left;
+    font-size: 60px;
+}
+
+nav ul {
+    float: right;
+    font-size: 20px;
+}
+
+nav ul li a:hover {
+    color: #176186; /* Цвет при наведении курсора */
+    font-size: 30px; /* Увеличиваем размер шрифта при наведении */
+    transition: font-size 0.3s ease;
+}
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.banner {
+    background-image: url('banner.jpg');
+    background-size: cover;
+    color: #000000;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.banner h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.banner p {
+    font-size: 18px;
+}
+div {
+    padding-left: 5px; /* Задаем отступ слева */
+}
+
+.products {
+    padding: 50px 0;
+}
+a img {
+    
+    background-size: contain; /* Размеры изображения сохраняются, чтобы оно поместилось в контейнер */
+    width: 50px; /* Ширина изображения */
+    height: 50px; /* Высота изображения */
+}
+.gallery img {
+    border-radius: 30px;
+    height: 240px;
+    width: 160px;
+    transition: transform 0.3s ease; /* Анимация движения */
+}
+
+.gallery img:hover {
+    transform: scale(1.5); /* Увеличение при наведении */
+}
+button {
+    background-color:  #176186;
+    border: none;
+    color: rgb(6, 6, 6);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #232e34
+}
+
+
+footer {
+    color: #000000;
+    text-align: center;
+    padding: 10px 0;
+}
+/* Media Queries */
+@media only screen and (min-width: 768px) {
+    /* Медиа-запрос для устройств шире 768px (планшеты и десктопы) */
+    nav ul {
+        display: block; /* Показываем меню на широких экранах */
+    }
+
+    header h1 {
+        font-size: 60px; /* Увеличиваем размер заголовка для десктопов */
+    }
+
+    nav ul li {
+        display: inline;
+        margin-left: 20px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    /* Медиа-запрос для устройств с максимальной шириной 767px (мобильные устройства) */
+    header h1 {
+        font-size: 30px; /* Уменьшаем размер заголовка для мобильных устройств */
+    }
+
+    nav ul li {
+        display: block;
+    }
+}
